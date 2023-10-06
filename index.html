@@ -6,7 +6,9 @@
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
             body{
                 font-family: 'Open Sans', sans-serif;
-                font-size: 14px;
+                font-size: 15px;
+                margin: 0;
+                padding: 0;
             }
             .wrapper{
                 table-layout: fixed;
@@ -32,13 +34,17 @@
                 display: inline-block;
                 width: 100%;
                 max-width: 200px;
-
                 margin: 0 22px;
             }
             .columns{
                 display: inline-block;
                 width: 100%;
                 max-width: 250px;
+            }
+            @media (max-width: 600px) {
+                p{
+                    font-size: 55%;
+                }
             }
         </style>
 
@@ -47,34 +53,37 @@
     <body>
         <center class="wrapper">
             <table class="main">
+                <!--Header-->
                 <tr>
-                    <td style="padding: 20px;">
-                        <table style="display: inline;">
+                    <td style="padding: 10px 20px;">
+                        <table style="display: inline-block;">
                             <tr>
                                 <td>
-                                    <img src="https://i.postimg.cc/hjYDGCbX/logo.png" alt="logo" style="width: 50%;">
+                                    <img src="https://i.postimg.cc/hjYDGCbX/logo.png" alt="logo" title="Logo" style="width: 50%;">
                                 </td>
                             </tr>
                         </table>
-                        <table al style="display: inline;margin-left: 100px;">
+                        <table style="display: inline-block;text-align: center;margin: auto;">
                             <tr>
-                                <td>
-                                    <img src="https://i.postimg.cc/fbBWGWVj/fb.png" alt="facebook">
-                                    <img src="https://i.postimg.cc/v86gV91J/twitter.png" alt="Twitter">
-                                    <img src="https://i.postimg.cc/PrsLzxYP/Utube.png" alt="YouTube">
-                                    <img src="https://i.postimg.cc/k4GMqr8r/linkedn.png" alt="LinkedIn">
+                                <td style="padding: 10px 0;">
+                                    <img src="https://i.postimg.cc/fbBWGWVj/fb.png" alt="facebook" title="facebook">
+                                    <img src="https://i.postimg.cc/v86gV91J/twitter.png" alt="Twitter" title="Twitter">
+                                    <img src="https://i.postimg.cc/PrsLzxYP/Utube.png" alt="YouTube" title="YouTube">
+                                    <img src="https://i.postimg.cc/k4GMqr8r/linkedn.png" alt="LinkedIn" title="LinkedIn">
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
 
+                <!--Header Section-->
                 <tr>
                     <td style="padding: 20px;">
-                        <img src="https://i.postimg.cc/xCBXZjZp/tax-invoice.jpg" alt="Tax invoice" width="100%">
+                        <img src="https://i.postimg.cc/xCBXZjZp/tax-invoice.jpg" alt="Tax invoice" title="Tax invoice" width="100%">
                     </td>
                 </tr>
-
+                 
+                <!--Clients details-->
                 <tr>
                     <td style="padding: 0 20px;">
                         <table style="display: inline;">
@@ -86,9 +95,9 @@
                                     <p style="color: grey;">Trader : Micheal Jones</p>
                                 </td>
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </td> 
-                                <td style="line-height: 0.5;">
+                                <td  style="line-height: 0.5;">
                                     <p align="right" style="color: grey;">First World Trader t/a EasyEquities</p>
                                     <p align="right" style="color: grey;">16th Floor, 25 Owl Street,</p>
                                     <p align="right" style="color: grey;">Auckland Park, 2092</p>
@@ -105,6 +114,7 @@
                     </td>
                 </tr>
 
+                <!--Invoice number-->
                 <tr>
                     <td style="padding: 0 20px ; line-height: 0;">
                         <table>
@@ -133,6 +143,7 @@
                     </td>
                 </tr>
 
+                <!--Invoice-->
                 <tr>
                     <td style="padding: 0 20px;">
                         <table width="100%" style="background-color: rgb(48, 48, 88);">
@@ -144,53 +155,56 @@
                         <table width="100%" style="border: 1px solid grey;line-height: 0;">
                             <tr>
                                 <td><p style="color: grey;">BROKER COMMISSION</p></td>
-                                <td><p align="right" style="color: grey;" >0.13</p></td>
+                                <td><p  style="color: grey;" >0.13</p></td>
                             </tr>
                             <tr>
                                 <td><p style="color: grey;">SETTLEMENT AND ADMINISTRATION</p></td>
-                                <td><p align="right" style="color: grey;" >0.04</p></td>
+                                <td><p  style="color: grey;" >0.04</p></td>
                             </tr>
                             <tr>
                                 <td><p style="color: grey;">INVESTOR PROTECTION LEVY AND ADMINISTRATION (IPL)</p></td>
-                                <td><p align="right" style="color: grey;" >0.01</p></td>
+                                <td><p  style="color: grey;" >0.01</p></td>
                             </tr>
                             <tr>
                                 <td><p style="color: grey;">SECURITIES TRANSFER TAX AND ADMINISTRATION </p></td>
-                                <td><p align="right" style="color: grey;" >0.13</p></td>
+                                <td><p  style="color: grey;" >0.13</p></td>
                             </tr>
                             <tr>
                                 <td><p style="color: grey;">VALUE-ADDED TAX ON COSTS (VAT)</p></td>
-                                <td><p align="right" style="color: grey;" >0.03</p></td>
+                                <td><p  style="color: grey;" >0.03</p></td>
                             </tr>
                             <tr>
                                 <td>
                                     <p style="color: grey;font-weight: 600;">EASYMONEY <span style="font-weight: 100;">CREDIT</span> (<a href="#" style="color: red;font-weight: 100;" >How do i earn credit</a>)</p>
                                 </td>
-                                <td><p align="right" style="color: grey;" >(EM 0.00)</p></td>
+                                <td><p style="color: grey;" >(EM 0.00)</p></td>
                             </tr>
                             <tr>
                                 <td><p style="color: grey;font-weight: 600;">TOTAL TRANSACTION COST</p></td>
-                                <td><p align="right" style="color: grey;" >0.34</p></td>
+                                <td><p style="color: grey;" >0.34</p></td>
                             </tr>
                             <tr>
                                 <td><p style="color: grey;font-weight: 600;">TRADE VALUE</p></td>
-                                <td><p align="right" style="color: grey;" >50.00</p></td>
+                                <td><p style="color: grey;" >50.00</p></td>
                             </tr>
                         </table>
                         <table width="100%" style="border: 2px solid red;">
                             <tr>
                                 <td><p style="color: red;font-weight: 500;">TRADE VALUE</p></td>
-                                <td><p align="right" style="color: red;" >50.34</p></td>
+                                <td><p  style="color: red;" >50.34</p></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
 
+                <!--Refer Section-->
                 <tr>
                     <td style="padding: 20px 20px 0 20px;">
-                        <img src="https://i.postimg.cc/fy4bK236/referal.png" alt="referal announcemennt" width="100%">
+                        <img src="https://i.postimg.cc/fy4bK236/referal.png" alt="referal announcemennt" title="referal announcemennt" width="100%">
                     </td>
                 </tr>
+
+
                 <tr>
                     <td style="padding: 0 20px;">
                         <table style="border: 1px solid grey;">
@@ -315,10 +329,10 @@
                                     <table class="columns" style="margin-bottom: 30px;">
                                         <tr>
                                             <td>
-                                                <img src="https://i.postimg.cc/fbBWGWVj/fb.png" alt="FaceBook">
-                                                <img src="https://i.postimg.cc/v86gV91J/twitter.png" alt="Twitter">
-                                                <img src="https://i.postimg.cc/PrsLzxYP/Utube.png" alt="YouTube">
-                                                <img src="https://i.postimg.cc/k4GMqr8r/linkedn.png" alt="LinkedIn">
+                                                <img src="https://i.postimg.cc/fbBWGWVj/fb.png" alt="FaceBook" title="FaceBook">
+                                                <img src="https://i.postimg.cc/v86gV91J/twitter.png" alt="Twitter" title="Twitter">
+                                                <img src="https://i.postimg.cc/PrsLzxYP/Utube.png" alt="YouTube" title="YouTube">
+                                                <img src="https://i.postimg.cc/k4GMqr8r/linkedn.png" alt="LinkedIn" title="LinkedIn">
                                             </td>
                                         </tr>
                                     </table>
